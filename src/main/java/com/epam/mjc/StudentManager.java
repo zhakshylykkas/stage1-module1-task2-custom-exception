@@ -9,7 +9,7 @@ public class StudentManager {
     try {
       return Student.getValueOf(studentID);
     } catch (StudentNotFoundException snfe) {
-      throw new StudentNotFoundException("Could not student with ID " + studentID);
+      throw new StudentNotFoundException("Could not find student with ID " + studentID);
     }
   }
 
